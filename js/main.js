@@ -125,7 +125,14 @@ window.handleForm = function (e) {
       if (window.scrollY >= s.offsetTop - 100) cur = s.id;
     });
     navLinks.forEach(a => {
-      a.style.color = a.getAttribute('href') === '#' + cur ? 'var(--accent)' : '';
+      if (a.getAttribute('href') === '#' + cur) {
+        a.classList.add('active');
+      } else {
+        a.classList.remove('active');
+      }
     });
   }, { passive: true });
+  
+  // Trigger once on load to set initial active state
+  window.dispatchEvent(new Event('scroll'));
 })();
