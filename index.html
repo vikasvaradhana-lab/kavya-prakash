@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kavya Prakash — Molecular Biologist specialising in epigenetics, developmental toxicology and stem cell biology. Uppsala University.">
+<meta name="keywords" content="Kavya Prakash, epigenetics, neurodevelopmental toxicology, Uppsala University, PhD candidate, stem cell, BPA, molecular biology">
+<meta property="og:title" content="Kavya Prakash | Molecular Biologist">
+<meta property="og:description" content="Molecular Biologist in Epigenetics &amp; Developmental Toxicology — Uppsala University">
+<meta property="og:type" content="website">
+<title>Kavya Prakash | Epigenetics · Developmental Toxicology · Stem Cell Biology</title>
+<script>
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ================================================= -->
+<!-- SECTION: NAVIGATION                               -->
+<!-- ================================================= -->
+<header>
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Kavya <span>Prakash</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">Profile</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Expertise</a></li>
+        <li><a href="#vision">Research Vision</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+          <svg id="sunIcon" viewBox="0 0 24 24"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1zm0-16a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1zm8 8a1 1 0 0 1 0 2h-1a1 1 0 0 1 0-2h1zM5 12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2h1zm11.95-6.364a1 1 0 0 1 1.414 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707zM6.343 17.657a1 1 0 0 1 1.414 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707zm12.021.707a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707zM7.757 6.343a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707z"/></svg>
+        </button>
+        <a href="mailto:kavyaprakash0398@gmail.com" class="btn btn-primary">Contact</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ── Mobile Menu ── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMobile()">Profile</a>
+  <a href="#education" onclick="closeMobile()">Education</a>
+  <a href="#experience" onclick="closeMobile()">Experience</a>
+  <a href="#skills" onclick="closeMobile()">Expertise</a>
+  <a href="#vision" onclick="closeMobile()">Research Vision</a>
+</div>
+
+<main>
+
+<!-- ================================================= -->
+<!-- SECTION: HERO                                     -->
+<!-- ================================================= -->
+<section id="hero" aria-label="Introduction">
+  <div class="hero-bg-decor" aria-hidden="true"></div>
+
+  <div class="hero-text container" style="grid-column:1;">
+    <div class="hero-status">
+      <span class="dot"></span>
+      <span>Molecular Biologist | Epigenetics | Developmental Toxicology</span>
+    </div>
+    <h1>Kavya <em>Prakash</em></h1>
+    <h2 class="hero-theme">Environmental Exposures &amp; Neurodevelopment</h2>
+    <p class="hero-statement">Exploring mechanistic pathways through molecular and stem cell-based models.</p>
+    <p class="hero-summary">Molecular biologist trained at Uppsala University with expertise in epigenetics, developmental toxicology, and stem cell biology. Experienced in RT-qPCR, pyrosequencing, and immunofluorescence using human and mouse embryonic stem cell models to investigate how environmental exposures reshape epigenetic programmes during neural development.</p>
+    <div class="hero-focus">
+      <span class="focus-tag">Environmental Epigenomics</span>
+      <span class="focus-tag">Stem Cell Models</span>
+      <span class="focus-tag">Endocrine Disruptors</span>
+      <span class="focus-tag">Cortical Neurodevelopment</span>
+    </div>
+    <div class="hero-actions">
+      <a href="cv/Kavya_Prakash_CV.pdf" class="btn btn-primary" download>Download CV</a>
+      <a href="mailto:kavyaprakash0398@gmail.com" class="btn btn-secondary">Collaborate</a>
+      <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-inner">
+      <img src="images/hero-researcher-portrait.webp"
+           alt="Kavya Prakash, molecular biologist and early-career researcher"
+           loading="eager"
+           class="hero-portrait-img">
+    </div>
+  </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: RESEARCH_SNAPSHOT                         -->
+<!-- ================================================= -->
+<section id="snapshot" class="section-sm" aria-label="Research Snapshot">
+  <div class="container">
+    <div class="snapshot-grid">
+      <div class="snapshot-card reveal">
+        <div class="snapshot-icon">🏛️</div>
+        <h3>Institution</h3>
+        <p>Uppsala University</p>
+      </div>
+      <div class="snapshot-card reveal">
+        <div class="snapshot-icon">🎓</div>
+        <h3>Degree</h3>
+        <p>MSc Biology (Immunology and Microbiology)</p>
+      </div>
+      <div class="snapshot-card reveal">
+        <div class="snapshot-icon">🧫</div>
+        <h3>Experimental Models</h3>
+        <div class="snapshot-tags">
+          <span class="focus-tag">hESC</span>
+          <span class="focus-tag">mESC</span>
+          <span class="focus-tag">SH-SY5Y</span>
+          <span class="focus-tag">Caco-2</span>
+        </div>
+      </div>
+      <div class="snapshot-card reveal">
+        <div class="snapshot-icon">🔬</div>
+        <h3>Molecular Techniques</h3>
+        <div class="snapshot-tags">
+          <span class="focus-tag">RT-qPCR</span>
+          <span class="focus-tag">Pyrosequencing</span>
+          <span class="focus-tag">Immunofluorescence</span>
+        </div>
+      </div>
+      <div class="snapshot-card reveal">
+        <div class="snapshot-icon">📊</div>
+        <h3>Data Analysis</h3>
+        <div class="snapshot-tags">
+          <span class="focus-tag">R</span>
+          <span class="focus-tag">Statistics</span>
+          <span class="focus-tag">Biological Interpretation</span>
+        </div>
+      </div>
+      <div class="snapshot-card reveal">
+        <div class="snapshot-icon">🎯</div>
+        <h3>Career Direction</h3>
+        <p>PhD Research in Developmental Epigenomics</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: RESEARCH_PROFILE                         -->
+<!-- ================================================= -->
+<section id="about" class="section" aria-label="Research Profile">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <img src="images/research-profile-lab.webp"
+             alt="Kavya Prakash performing laboratory research in a molecular biology laboratory"
+             class="about-portrait"
+             loading="lazy">
+        <div class="about-affil">
+          <p><strong>Current Affiliation</strong></p>
+          <p>EpiTox Group · Department of Organismal Biology<br>Uppsala University, Sweden</p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="label">Research Profile</div>
+        <div class="divider"></div>
+        <h2>Environmental epigenetics and neurodevelopmental biology</h2>
+        <p class="subtitle">Investigating how chemical exposures reshape the epigenome during neural development</p>
+        <p>My research centres on understanding how environmental exposures — particularly endocrine-disrupting chemicals such as bisphenol A and bisphenol F — influence epigenetic regulation during the earliest stages of neurodevelopment. I am interested in the molecular mechanisms through which these chemicals alter DNA methylation patterns, disrupt transcriptional programmes, and compromise the fidelity of stem cell differentiation toward neural lineages.</p>
+        <p>My experimental training spans epigenetic profiling techniques (pyrosequencing, RT-qPCR, immunofluorescence), stem cell culture and differentiation (human and mouse embryonic stem cells, SH-SY5Y neuroblastoma, Caco-2), and downstream analytical approaches including R-based statistical analysis and biological data interpretation. This training has been developed across two international academic systems — Kerala University, India, and Uppsala University, Sweden — complemented by three years of industry experience in quality assurance that instilled rigorous documentation and experimental reproducibility standards.</p>
+        <p>I am actively pursuing doctoral research opportunities at the intersection of developmental epigenomics, environmental exposure biology, and stem cell-based disease modelling, with a focus on understanding how early-life chemical insults programme long-term changes in neuronal identity and function.</p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="hi-icon">🧬</div>
+            <h4>Epigenetics Focus</h4>
+            <p>DNA methylation, EDC mechanisms, stem cell epigenomics</p>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-icon">🔬</div>
+            <h4>Wet-Lab Expertise</h4>
+            <p>Pyrosequencing, RT-qPCR, immunofluorescence, cell culture</p>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-icon">🌍</div>
+            <h4>International Training</h4>
+            <p>India → Sweden; multilingual; global research perspective</p>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-icon">📊</div>
+            <h4>Analytical Rigour</h4>
+            <p>R programming, GLP, QA/QC documentation, statistical design</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: EDUCATION                                -->
+<!-- ================================================= -->
+<section id="education" class="section" aria-label="Education">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Academic Formation</div>
+      <div class="divider"></div>
+      <h2>Education</h2>
+      <p>An academic trajectory spanning molecular biology, immunology, and epigenomics across two continents.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-year">2024–2026</div>
+        <div class="tl-content">
+          <h3>M.Sc. in Biology — Immunology and Microbiology</h3>
+          <div class="tl-inst">Uppsala University, Sweden</div>
+          <p>Advanced training in immunology, microbiology, and epigenomics. Thesis research embedded within the EpiTox Group investigating environmental pollutant effects on stem cell epigenetics and neurodevelopment. Complemented by teaching assistantship duties across advanced molecular biology courses.</p>
+          <span class="tl-badge">Uppsala, Sweden</span>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-year">2019–2021</div>
+        <div class="tl-content">
+          <h3>M.Sc. in Biotechnology</h3>
+          <div class="tl-inst">Kerala University, India</div>
+          <p>Thesis focused on miRNA-mediated regulation of chemoresistance in cisplatin-resistant ovarian cancer cells, combining expression profiling with bioinformatics-assisted pathway analysis. Developed foundational skills in molecular biology and cancer biology.</p>
+          <span class="tl-badge">Thiruvananthapuram, India</span>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-year">2016–2019</div>
+        <div class="tl-content">
+          <h3>B.Sc. in Biotechnology</h3>
+          <div class="tl-inst">Kerala University, India</div>
+          <p>Undergraduate foundation in core life sciences: biochemistry, genetics, cell biology, and molecular biology. Developed early laboratory skills and scientific reasoning that underpinned subsequent postgraduate research.</p>
+          <span class="tl-badge">Thiruvananthapuram, India</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: TEACHING_MENTORSHIP                      -->
+<!-- ================================================= -->
+<section id="teaching" class="section" aria-label="Teaching and Mentorship">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Academic Instruction</div>
+      <div class="divider"></div>
+      <h2>Teaching &amp; Mentorship</h2>
+      <p>Laboratory instruction experience across advanced molecular biology techniques at Uppsala University.</p>
+    </div>
+    <div class="exp-grid">
+      <article class="exp-card reveal">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-title">Laboratory Teaching Assistant</h3>
+            <div class="exp-org">Uppsala University</div>
+          </div>
+          <div class="exp-date">Nov 2025 — Jan 2026</div>
+        </div>
+        <h4>Techniques Instructed</h4>
+        <ul>
+          <li>Pyrosequencing — bisulfite-converted DNA methylation analysis</li>
+          <li>RT-qPCR / qPCR — gene expression quantification and primer optimisation</li>
+          <li>Live-cell imaging — real-time cellular observation and documentation</li>
+          <li>Whole-mount in situ hybridisation (WISH) — zebrafish developmental gene expression</li>
+          <li>Drosophila behavioural assays — model organism experimental design</li>
+        </ul>
+        <h4>Supervision &amp; Impact</h4>
+        <ul>
+          <li>Instructed 20+ undergraduate and graduate students in advanced molecular techniques</li>
+          <li>Managed daily laboratory operations — equipment setup, sample preparation, and data logging</li>
+          <li>Designed and structured student experiments reinforcing reproducibility and best practices</li>
+          <li>Maintained compliance with safety, ethical, and GLP standards throughout all sessions</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">Pyrosequencing</span>
+          <span class="tech-tag">qPCR</span>
+          <span class="tech-tag">Live-Cell Imaging</span>
+          <span class="tech-tag">WISH (Zebrafish)</span>
+          <span class="tech-tag">Experimental Reproducibility</span>
+          <span class="tech-tag">Student Supervision</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: RESEARCH_EXPERIENCE                      -->
+<!-- ================================================= -->
+<section id="experience" class="section" aria-label="Research Experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Research History</div>
+      <div class="divider"></div>
+      <h2>Research Experience</h2>
+      <p>A consistent record of hands-on research spanning epigenetics, neurotoxicology, cancer biology, and environmental science.</p>
+    </div>
+    <div class="exp-grid">
+
+      <article class="exp-card reveal">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-title">Master's Thesis Researcher</h3>
+            <div class="exp-org">EpiTox Group · Department of Organismal Biology · Uppsala University</div>
+          </div>
+          <div class="exp-date">Oct 2025 — May 2026</div>
+        </div>
+        <p class="exp-project-desc">
+          Project: Cellular and Molecular Impact of BPA and BPF on Human and Mouse Embryonic Stem Cell Models of Dorsal Forebrain Differentiation
+        </p>
+        <h4>Key Contributions</h4>
+        <ul>
+          <li>Established and optimised a dorsal forebrain differentiation protocol in human (hESC) and mouse (mESC) embryonic stem cells to model early cortical neurodevelopment in vitro.</li>
+          <li>Characterised the effects of bisphenol A (BPA) and bisphenol F (BPF) on neuroectodermal differentiation markers and cellular stress responses using RT-qPCR and immunofluorescence staining.</li>
+          <li>Integrated molecular and imaging data to evaluate endocrine-disrupting chemical (EDC) effects on epigenetic and transcriptional programmes during neural induction.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">hESC / mESC Culture</span>
+          <span class="tech-tag">RT-qPCR</span>
+          <span class="tech-tag">Immunofluorescence</span>
+          <span class="tech-tag">BPA / BPF Toxicology</span>
+          <span class="tech-tag">Neural Induction</span>
+          <span class="tech-tag">Epigenetics</span>
+        </div>
+      </article>
+
+      <article class="exp-card reveal">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-title">Research Trainee</h3>
+            <div class="exp-org">Dept. of Organismal Biology — Physiology &amp; Environmental Toxicology · Uppsala University</div>
+          </div>
+          <div class="exp-date">Jul — Sep 2025</div>
+        </div>
+        <h4>Key Contributions</h4>
+        <ul>
+          <li>Differentiated SH-SY5Y neuroblastoma cells toward a glutamatergic neuronal phenotype and validated neuronal marker expression by quantitative PCR.</li>
+          <li>Optimised qPCR primer conditions and extraction protocols for downstream toxicological assays.</li>
+          <li>Maintained Caco-2 and SH-SY5Y cell cultures to support an advanced toxicology course, ensuring experimental reproducibility across student cohorts.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">SH-SY5Y Differentiation</span>
+          <span class="tech-tag">qPCR</span>
+          <span class="tech-tag">Caco-2 Culture</span>
+          <span class="tech-tag">Primer Optimisation</span>
+          <span class="tech-tag">Neurotoxicology</span>
+        </div>
+      </article>
+
+      <article class="exp-card reveal">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-title">M.Sc. Thesis Researcher — Cancer Biology</h3>
+            <div class="exp-org">Kerala University, India</div>
+          </div>
+          <div class="exp-date">2019 — 2021</div>
+        </div>
+        <p class="exp-project-desc">
+          Project: Identification of microRNAs Regulating Differentially Expressed Genes in Cisplatin-Resistant Ovarian Cancer Cells
+        </p>
+        <h4>Key Contributions</h4>
+        <ul>
+          <li>Profiled microRNA-mediated regulation of chemoresistance pathways in ovarian cancer using expression analysis and bioinformatics-assisted pathway interpretation.</li>
+          <li>Identified candidate miRNA–mRNA regulatory axes relevant to platinum-based drug resistance mechanisms.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag">miRNA Expression Analysis</span>
+          <span class="tech-tag">Bioinformatics</span>
+          <span class="tech-tag">Pathway Interpretation</span>
+          <span class="tech-tag">Ovarian Cancer Biology</span>
+          <span class="tech-tag">Chemoresistance</span>
+        </div>
+      </article>
+
+      <article class="exp-card industry reveal">
+        <div class="exp-header">
+          <div>
+            <h3 class="exp-title">Quality Assurance &amp; Quality Control Specialist</h3>
+            <div class="exp-org" style="color:var(--accent-gold)">Nexus Agro Farms · Kerala, India</div>
+          </div>
+          <div class="exp-date">Oct 2021 — Jun 2024</div>
+        </div>
+        <h4>Key Contributions</h4>
+        <ul>
+          <li>Designed and implemented systematic QA/QC protocols for hybrid crop batch testing, achieving consistent compliance with regulatory yield and germination standards.</li>
+          <li>Led cross-functional troubleshooting to diagnose performance issues and optimise cultivation practices using data-driven quality metrics.</li>
+          <li>Conducted field inspections and sampling programmes, developing disciplined experimental documentation habits directly transferable to academic research.</li>
+        </ul>
+        <div class="tech-tags">
+          <span class="tech-tag gold">QA/QC Protocol Design</span>
+          <span class="tech-tag gold">Regulatory Compliance</span>
+          <span class="tech-tag gold">Data-Driven Metrics</span>
+          <span class="tech-tag gold">Field Sampling</span>
+          <span class="tech-tag gold">Cross-functional Leadership</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: TECHNICAL_EXPERTISE                      -->
+<!-- ================================================= -->
+<section id="skills" class="section" aria-label="Technical Expertise">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Competencies</div>
+      <div class="divider"></div>
+      <h2>Technical Expertise</h2>
+      <p>Core experimental and analytical competencies developed across academic research and industry practice.</p>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-cat reveal">
+        <h3>Experimental Models</h3>
+        <div class="sk-sub">Cell Culture Systems</div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">hESC (Human Embryonic Stem Cells)</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">mESC (Mouse Embryonic Stem Cells)</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="87"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">SH-SY5Y Neuroblastoma</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Caco-2 Intestinal Epithelial</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <h3>Molecular Biology Techniques</h3>
+        <div class="sk-sub">Core Methods</div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">RT-qPCR / qPCR</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Pyrosequencing (bisulfite DNA methylation)</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Immunofluorescence Staining</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">RNA &amp; DNA Extraction</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">RNA Analysis</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <h3>Data Analysis</h3>
+        <div class="sk-sub">Analytical Competencies</div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">R (Statistics &amp; Visualisation)</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Statistical Analysis</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Experimental Design</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Data Interpretation</span><span class="skill-level">Proficient</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-cat reveal">
+        <h3>Laboratory Practice</h3>
+        <div class="sk-sub">Professional Standards</div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Good Laboratory Practice (GLP)</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">QA/QC Protocol Design</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Documentation &amp; Reporting</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Experimental Reproducibility</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item-top"><span class="skill-name">Safety Compliance</span><span class="skill-level">Advanced</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: RESEARCH_INTERESTS                       -->
+<!-- ================================================= -->
+<section id="interests" class="section section-sm" aria-label="Research Interests">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Scientific Focus</div>
+      <div class="divider"></div>
+      <h2>Research Interests</h2>
+    </div>
+    <div class="interests-grid">
+      <div class="interest-card reveal">
+        <div class="interest-icon">🧬</div>
+        <h3>Epigenomics</h3>
+        <p>DNA methylation dynamics, chromatin organisation, and genome-wide epigenetic reprogramming during development</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">🧠</div>
+        <h3>Neurodevelopmental Toxicology</h3>
+        <p>How early-life chemical exposures impair cortical differentiation and programme lasting neurological consequences</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">☣️</div>
+        <h3>Endocrine Disruption</h3>
+        <p>Mechanistic investigation of bisphenols, plasticisers, and environmental chemicals on hormonal and transcriptional signalling</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">🕐</div>
+        <h3>Circadian Biology</h3>
+        <p>Rhythmicity in DNA methylation and its intersection with developmental timing and environmental stress responses</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">🔬</div>
+        <h3>Stem Cell Models</h3>
+        <p>Human and mouse embryonic stem cells as precision platforms for developmental toxicology and mechanistic epigenomics</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">💊</div>
+        <h3>Cancer Epigenetics</h3>
+        <p>miRNA-mediated chemoresistance, epigenetic plasticity in tumour progression, and novel therapeutic targets</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: SCIENTIFIC_COMMUNICATION                 -->
+<!-- ================================================= -->
+<section id="communication" class="section" aria-label="Scientific Communication">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Research Dissemination</div>
+      <div class="divider"></div>
+      <h2>Scientific Communication</h2>
+      <p>A commitment to effective dissemination of research across academic and public audiences.</p>
+    </div>
+    <div class="interests-grid">
+      <div class="interest-card reveal">
+        <div class="interest-icon">🎤</div>
+        <h3>Research Presentations</h3>
+        <p>Oral presentation at the Uppsala University Student Conference in Science and Technology, communicating neurotoxicology research to a multidisciplinary audience</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">🧪</div>
+        <h3>Laboratory Mentoring</h3>
+        <p>Instructed 20+ students in pyrosequencing, qPCR, live-cell imaging, and whole-mount in situ hybridisation as teaching assistant at Uppsala University</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">🌐</div>
+        <h3>International Engagement</h3>
+        <p>International Student Ambassador for the Office of Science and Technology at Uppsala University, representing the institution's research community globally</p>
+      </div>
+      <div class="interest-card reveal">
+        <div class="interest-icon">✍️</div>
+        <h3>Scientific Writing</h3>
+        <p>Master's thesis manuscript in preparation on BPA/BPF effects on embryonic stem cell models of dorsal forebrain differentiation, expected 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: PUBLICATIONS                             -->
+<!-- ================================================= -->
+<section id="publications" class="section" aria-label="Publications and Presentations">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Scholarly Output</div>
+      <div class="divider"></div>
+      <h2>Presentations &amp; Conferences</h2>
+    </div>
+    <div class="pub-card reveal">
+      <div class="pub-type">Conference Presentation · Oral</div>
+      <h3>Environmental Pollutants and Brain Health: Insights from Human Cell Models of Neurodegeneration</h3>
+      <p class="pub-meta">Kavya Prakash · Uppsala University Student Conference in Science and Technology, 2025</p>
+    </div>
+    <div class="pub-upcoming reveal">
+      <p class="pub-upcoming-title">Master's thesis manuscript in preparation · Expected 2026</p>
+      <p class="pub-upcoming-desc">Research on BPA/BPF effects on human and mouse ESC models of dorsal forebrain differentiation</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: AWARDS                                   -->
+<!-- ================================================= -->
+<section id="awards" class="section section-sm" aria-label="Awards and Leadership">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">Recognition</div>
+      <div class="divider"></div>
+      <h2>Awards &amp; Leadership</h2>
+    </div>
+    <div class="awards-grid">
+      <div class="award-card reveal">
+        <div class="award-icon">🌐</div>
+        <h3>International Student Ambassador</h3>
+        <p>Office of Science and Technology, Uppsala University — representing the institution's international academic community</p>
+        <span class="aw-year">2025 — 2026</span>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon">🎤</div>
+        <h3>Conference Speaker</h3>
+        <p>Selected to present at the Uppsala University Student Conference in Science and Technology — communicating original research to a multidisciplinary audience</p>
+        <span class="aw-year">2025</span>
+      </div>
+      <div class="award-card reveal">
+        <div class="award-icon">📝</div>
+        <h3>IELTS Band 8.0</h3>
+        <p>Exceptional English language proficiency demonstrating readiness for international doctoral programmes and global scientific collaboration</p>
+        <span class="aw-year">Academic</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: RESEARCH_VISION                          -->
+<!-- ================================================= -->
+<section id="vision" aria-label="Research Vision">
+  <div class="container">
+    <div class="label reveal">Research Vision</div>
+    <div class="divider" style="background:rgba(255,255,255,0.3); margin: 12px 0 24px;"></div>
+    <h2 class="reveal">Understanding molecular mechanisms of environmental epigenetic disruption in neurodevelopment</h2>
+    <p class="reveal">My research vision is to contribute to a deeper understanding of how environmental chemical exposures — particularly endocrine-disrupting compounds — alter epigenetic programmes during critical windows of neurodevelopment. Using stem cell-based models of cortical differentiation, I aim to characterise the molecular pathways through which chemicals such as bisphenol A and bisphenol F influence DNA methylation, gene expression, and neuronal lineage commitment.</p>
+    <p class="reveal">I am particularly interested in bridging the gap between epigenetic profiling at the genome-wide level and mechanistic interpretation at the molecular level: identifying which specific chromatin complexes and regulatory elements mediate exposure-induced methylation changes, and understanding how these changes propagate through differentiation to alter neuronal identity and function. This work has direct translational relevance to developmental neurotoxicology, regulatory risk assessment, and the growing public health concern around ubiquitous environmental chemical exposures.</p>
+    <p class="reveal">I am seeking PhD opportunities within European research programmes — including Marie Skłodowska-Curie doctoral networks and institutional fellowships — where I can contribute rigorous experimental expertise in stem cell biology and epigenetic techniques to collaborative, internationally-oriented research groups advancing this important frontier.</p>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- WHY KAVYA (Candidate Profile)                     -->
+<!-- ================================================= -->
+<section id="why" class="section" aria-label="Candidate Profile">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="label">For Recruiters &amp; Supervisors</div>
+      <div class="divider"></div>
+      <h2>Why Kavya?</h2>
+      <p>A considered and evidence-based case for Kavya Prakash as a doctoral candidate or early-career research scientist.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-num">01</div>
+        <h3>Rare Epigenetic Technique Depth</h3>
+        <p>Hands-on pyrosequencing experience is uncommon at M.Sc. level and directly relevant to genome-wide DNA methylation research programmes.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">02</div>
+        <h3>Mechanistic Continuity</h3>
+        <p>Both M.Sc. theses (miRNA/cancer epigenetics; BPA/neurodevelopment) reflect a coherent interest in how molecular signals alter gene regulation — strong foundation for PhD work.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">03</div>
+        <h3>Lab-Ready from Day One</h3>
+        <p>Already embedded within Uppsala's EpiTox Group since mid-2025, Kavya brings contextual familiarity with the lab culture, protocols, and research questions.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">04</div>
+        <h3>International Academic Profile</h3>
+        <p>Trained across two countries, fluent in English (IELTS 8.0), and serving as an International Student Ambassador — genuinely global in outlook and approach.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">05</div>
+        <h3>Industry Discipline in Academia</h3>
+        <p>Three years of QA/QC work instilled documentation rigour, regulatory compliance, and systematic troubleshooting — directly valuable in any research environment.</p>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-num">06</div>
+        <h3>Strong Scientific Communication</h3>
+        <p>Conference presenter, laboratory instructor, and student ambassador — a scientist who can communicate ideas across audiences and contribute to a research community.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================= -->
+<!-- SECTION: CONTACT                                  -->
+<!-- ================================================= -->
+<section id="contact" class="section" aria-label="Contact">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <div class="label">Get in Touch</div>
+        <div class="divider"></div>
+        <h2>Let's discuss science</h2>
+        <p>Whether you are a prospective PhD supervisor, a principal investigator, a research coordinator, or a biotechnology recruiter, Kavya welcomes conversations about doctoral programmes, research collaborations, and career opportunities in molecular biology and epigenetics.</p>
+        <div class="contact-links">
+          <a href="mailto:kavyaprakash0398@gmail.com" class="contact-link">
+            <div class="cl-icon">✉</div>
+            <div>
+              <span class="cl-label">Email</span>
+              <span class="cl-val">kavyaprakash0398@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:+46769640800" class="contact-link">
+            <div class="cl-icon">📞</div>
+            <div>
+              <span class="cl-label">Phone · Uppsala, Sweden</span>
+              <span class="cl-val">+46 7696 40 800</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank" rel="noopener" class="contact-link">
+            <div class="cl-icon">in</div>
+            <div>
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-val">linkedin.com/in/kavya-prakash-vks</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <div class="label">Send a Message</div>
+        <div class="divider"></div>
+        <div class="form-group">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" placeholder="Your name" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" placeholder="your@email.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="fsubject">Subject</label>
+          <input type="text" id="fsubject" placeholder="PhD opportunity / Research collaboration / ...">
+        </div>
+        <div class="form-group">
+          <label for="fmsg">Message</label>
+          <textarea id="fmsg" placeholder="I would like to discuss..."></textarea>
+        </div>
+        <button class="btn btn-primary" onclick="handleForm(event)" style="width:100%;justify-content:center;">
+          Send Message
+        </button>
+        <p id="form-msg" style="margin-top:12px;font-size:0.85rem;color:var(--accent);display:none;text-align:center;">
+          Thank you! Please email directly at kavyaprakash0398@gmail.com
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================= -->
+<!-- SECTION: FOOTER                                   -->
+<!-- ================================================= -->
+<footer>
+  <div class="container">
+    <p style="margin-bottom:6px;">
+      <strong style="color:rgba(255,255,255,0.9)">Kavya Prakash</strong> · 
+      M.Sc. Biology (Immunology &amp; Microbiology) · Uppsala University
+    </p>
+    <p>Uppsala, Sweden · <a href="mailto:kavyaprakash0398@gmail.com">kavyaprakash0398@gmail.com</a> · <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank">LinkedIn</a></p>
+    <p style="margin-top:12px;font-size:0.75rem;opacity:0.5">Portfolio built with semantic HTML · Accessible · Responsive</p>
+  </div>
+</footer>
+
+<!-- ── External JavaScript ── -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
