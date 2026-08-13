@@ -64,6 +64,31 @@ Phased evolution plan from refactor baseline to production-ready scientific port
 
 ---
 
+## Version 2.1 — Academic CV & Bioinformatics Project Alignment
+**Status**: Complete ✅
+
+**Goal**: Keep portfolio content in exact sync with updated PhD Application CV.
+
+**Changes**:
+- Saved LaTeX source CV to `cv/Kavya_Prakash_CV.tex`.
+- Added new experience card for "Independent Bioinformatics Project" under Experience.
+- Restructured technical skills into 6 distinct categories (including wet-lab, bioinformatics, and languages).
+- Refined professional summary and about descriptions.
+
+---
+
+## Version 2.2 — LaTeX Alignment & Wording Refinement
+**Status**: Complete ✅
+
+**Goal**: Refine and sync both LaTeX source CV and portfolio website with specific content adjustments (7,151 DEGs, Salmon, links, and trimmed bullets).
+
+**Changes**:
+- Applied precise header link, professional summary, and bullet adjustments to `cv/Kavya_Prakash_CV.tex`.
+- Updated Bioinformatics Project stats and Salmon workflow references.
+- Synced website `index.html` details with all content refinements.
+
+---
+
 ## Version 3.0 — Scientific Visual Redesign
 **Status**: Planned
 

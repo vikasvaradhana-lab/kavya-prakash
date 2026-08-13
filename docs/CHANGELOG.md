@@ -55,5 +55,28 @@ Content positioning update to transform perception from "MSc Student" to "Early-
 - All existing CSS styling and design tokens
 - JavaScript behaviour and animations
 - Responsive breakpoints and dark mode
-- Education, Research Experience, Awards, Publications content
+- Education, Awards, Publications content
 - Project structure and file organisation
+
+## Version 2.1 — Academic CV & Bioinformatics Project Alignment
+**Date**: 2026-06-24
+
+Content and technical expertise alignment with the updated LaTeX PhD Application CV.
+
+### Changes
+- **LaTeX CV Source Saved**: Saved the full LaTeX source code to `cv/Kavya_Prakash_CV.tex` to maintain version control of CV updates.
+- **Hero Section**: Updated professional summary with PhD-focused messaging, highlighting transcriptomics and independent bioinformatics research.
+- **About Section**: Refined research training and vision paragraphs to incorporate DESeq2, pathway analysis, and advanced cell culture methodologies.
+- **Research Experience**: Added a new card for the **Independent Bioinformatics Project** ("Transcriptomic Analysis of Valproic Acid-Induced Neurodevelopmental Alterations in Human Forebrain Organoids") detailing contributions and key findings.
+- **Skills Grid**: Expanded technical expertise from 4 to 6 categories (Epigenetics & Molecular Biology, Additional Wet-Lab Techniques, Cell Culture & Models, Bioinformatics & Data Analysis, Laboratory & Regulatory, Languages & Communication) to map directly to the updated CV.
+
+## Version 2.2 — LaTeX Alignment & Wording Refinement
+**Date**: 2026-06-24
+
+Fine-tuning and alignment of resume content and portfolio website details to match the user's specific wording choices and updated project figures.
+
+### Changes
+- **LaTeX CV Updated**: Applied precise edits to `cv/Kavya_Prakash_CV.tex`, including header links (Portfolio, LinkedIn), a shortened Professional Summary, simplified experience bullets, and updated Bioinformatics Project details (7,151 DEGs, Salmon, and GitHub repository URL).
+- **Website Alignment**: Synced `index.html` with all CV content refinements, including the updated Bioinformatics Project findings, the shortened professional summary, and trimmed experience bullets.
+
+

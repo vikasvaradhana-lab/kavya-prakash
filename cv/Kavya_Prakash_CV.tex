@@ -1,0 +1,234 @@
+% ============================================================
+%  Kavya Prakash — PhD Application CV
+%  ATS-safe, single-column, clean minimal style
+%  Compiler: pdfLaTeX  |  Overleaf ready
+% ============================================================
+
+\documentclass[10pt, a4paper]{article}
+
+% ── Packages ────────────────────────────────────────────────
+\usepackage[
+  top=1.8cm, bottom=1.8cm,
+  left=2cm,  right=2cm
+]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+% ── Typography ───────────────────────────────────────────────
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hypersetup{urlcolor=black, linkcolor=black}
+
+% Section headers: bold, all-caps, ruled line underneath
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}{0em}{}
+  [\vspace{1pt}\hrule\vspace{4pt}]
+\titlespacing{\section}{0pt}{10pt}{4pt}
+
+% Bullet list settings
+\setlist[itemize]{
+  leftmargin=1.4em,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=2pt
+}
+
+% ── Helper commands ──────────────────────────────────────────
+\newcommand{\entry}[3]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \textit{#3} \\
+    \textit{#2} & \\
+  \end{tabularx}%
+}
+
+\newcommand{\entryflat}[2]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & \textit{#2} \\
+  \end{tabularx}%
+}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+% ── Header ──────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries Kavya Prakash}\\[4pt]
+  Uppsala, Sweden \quad|\quad
+  +46 7696 40 800 \quad|\quad
+  \href{mailto:kavyaprakash0398@gmail.com}{kavyaprakash0398@gmail.com}\\[2pt]
+  \href{https://kavyaprakash.me}{Portfolio}
+  \quad|\quad
+  \href{https://www.linkedin.com/in/kavya-prakash-vks/}{LinkedIn}
+\end{center}
+
+\vspace{2pt}
+
+% ── Professional Summary ─────────────────────────────────────
+\section{Professional Summary}
+
+M.Sc. graduate in Biology (Immunology and Microbiology) from Uppsala University with experience in stem cell biology, epigenetics, neurodevelopmental toxicology, and transcriptomic data analysis. Skilled in qPCR, pyrosequencing, immunofluorescence, stem cell culture, RNA-seq analysis, and functional genomics. Seeking a PhD position in cell and molecular biology with a focus on disease mechanisms and stem cell-based models.
+
+\vspace{2pt}
+
+% ── Technical Skills ─────────────────────────────────────────
+\section{Technical Skills}
+
+\begin{tabularx}{\linewidth}{@{} >{\bfseries}p{5cm} X @{}}
+Molecular Biology
+  & qPCR, RT-qPCR, pyrosequencing (bisulfite-based DNA methylation), RNA extraction,
+    DNA extraction, immunofluorescence staining \\[3pt]
+
+Cell Culture \& Models
+  & Human and mouse embryonic stem cells (hESC, mESC), SH-SY5Y neuroblastoma cells,
+    Caco-2 intestinal epithelial cells, dorsal forebrain differentiation protocols \\[3pt]
+
+Bioinformatics
+  & R (DESeq2, ggplot2), RNA-seq analysis, differential gene expression,
+    Gene Ontology and KEGG enrichment analysis, PCA, heatmaps, Linux command line \\[3pt]
+
+Additional Techniques
+  & ELISA, Western blotting, flow cytometry, whole-mount in situ hybridisation,
+    live-cell imaging, GLP, QA/QC procedures \\[3pt]
+
+Laboratory Operations
+  & Autoclaving, glassware washing, waste disposal, cell culture hood and equipment
+    upkeep, consumables restocking, and supply ordering/vendor communication \\[3pt]
+
+Languages
+  & English (IELTS 8.0), Malayalam (native), Swedish (basic) \\
+\end{tabularx}
+
+\vspace{2pt}
+
+% ── Education ────────────────────────────────────────────────
+\section{Education}
+
+\entry{M.Sc.\ in Biology --- Immunology and Microbiology}{Uppsala University, Sweden}{2024 -- 2026}
+
+\vspace{4pt}
+
+\entry{M.Sc.\ in Biotechnology}{Kerala University, India}{2019 -- 2021}
+
+\vspace{4pt}
+
+\entry{B.Sc.\ in Biotechnology}{Kerala University, India}{2016 -- 2019}
+
+\vspace{2pt}
+
+% ── Selected Research Projects ───────────────────────────────
+\section{Selected Research Projects}
+
+\entry{Master's Thesis --- Uppsala University}{EpiTox Group, Department of Organismal Biology}{Oct 2025 -- May 2026}
+\vspace{2pt}
+\textit{Cellular and Molecular Impact of BPA and BPF on Human and Mouse Embryonic Stem Cell
+Models of Dorsal Forebrain Differentiation}
+\begin{itemize}
+  \item Established and optimised a dorsal forebrain differentiation protocol in human
+        and mouse embryonic stem cells to model early cortical neurodevelopment in vitro.
+  \item Characterised the effects of bisphenol A (BPA) and bisphenol F (BPF) on
+        neuroectodermal differentiation markers and cellular stress responses using
+        RT-qPCR and immunofluorescence staining.
+  \item Integrated molecular and imaging data to evaluate EDC-mediated disruption of
+        epigenetic and transcriptional programmes during neural induction.
+\end{itemize}
+
+\vspace{5pt}
+
+\entry{M.Sc.\ Thesis --- Kerala University}{Kerala University, India}{2019 -- 2021}
+\textit{Identification of microRNAs Regulating Differentially Expressed Genes in
+Cisplatin-Resistant Ovarian Cancer Cells}
+\begin{itemize}
+  \item Profiled microRNA-mediated regulation of chemoresistance pathways in ovarian
+        cancer through expression analysis and bioinformatics-assisted pathway
+        interpretation.
+  \item Identified candidate miRNA--mRNA regulatory axes associated with platinum-based
+        drug resistance mechanisms.
+\end{itemize}
+
+\vspace{2pt}
+
+% ── Bioinformatics Project ───────────────────────────────────
+\section{Bioinformatics Project}
+
+\entryflat
+{Transcriptomic Analysis of Valproic Acid-Induced Neurodevelopmental Alterations in Human Forebrain Organoids}
+{Independent Bioinformatics Research Project}
+
+\vspace{3pt}
+
+\begin{itemize}
+\item Re-analysed publicly available RNA-seq data from human forebrain organoids exposed to valproic acid (VPA), a neurodevelopmental toxicant associated with autism spectrum disorder risk.
+\item Performed transcript quantification, differential gene expression analysis, Gene Ontology enrichment, and KEGG pathway analysis using Salmon, DESeq2, and R.
+\item Identified 7,151 significantly differentially expressed genes (FDR < 0.05), including 1,676 high-confidence DEGs with absolute log$_2$ fold change greater than 1.
+\item Observed enrichment of pathways associated with ciliogenesis, neuronal development, synaptic signalling, myelination, and chromatin remodelling.
+\item Repository: \url{https://github.com/kavyaprakash-vks/vpa-forebrain-organoid-rnaseq}
+\end{itemize}
+
+
+\vspace{2pt}
+
+% ── Research Experience ──────────────────────────────────────
+\section{Research Experience}
+
+\entry{Research Trainee}{Uppsala University, Department of Organismal Biology --- Physiology and Environmental Toxicology}{Jul 2025 -- Sep 2025}
+\begin{itemize}
+\item Differentiated SH-SY5Y neuroblastoma cells toward a glutamatergic neuronal phenotype and validated neuronal marker expression using qPCR.
+\item Maintained SH-SY5Y and Caco-2 cell cultures and optimised molecular protocols for toxicological studies.
+\item Managed laboratory maintenance and operations, including autoclaving, glassware washing, waste disposal, cell culture hood and equipment upkeep, consumables restocking, and supply ordering.
+\end{itemize}
+
+\vspace{2pt}
+
+% ── Teaching Experience ──────────────────────────────────────
+\section{Teaching Experience}
+
+\entry{Laboratory Teaching Assistant}{Uppsala University}{Nov 2025 -- Jan 2026}
+\begin{itemize}
+\item Instructed undergraduate and graduate students in pyrosequencing, RT-qPCR, zebrafish whole-mount in situ hybridisation, Drosophila behavioural assays, and live-cell imaging.
+\item Supported laboratory operations, sample preparation, equipment setup, and experimental workflow design.
+\end{itemize}
+
+\vspace{2pt}
+
+% ── Industry Experience ──────────────────────────────────────
+\section{Industry Experience}
+
+\entry{Quality Assurance \& Quality Control Specialist}{Nexus Agro Farms, Kerala, India}{Oct 2021 -- Jun 2024}
+\begin{itemize}
+\item Implemented QA/QC procedures for hybrid crop testing and applied data-driven approaches to improve product consistency and regulatory compliance.
+\end{itemize}
+
+\vspace{2pt}
+
+% ── Leadership & Community ───────────────────────────────────
+\section{Leadership \& Community Engagement}
+
+\entryflat{International Student Ambassador, Office of Science and Technology --- Uppsala University}{2025 -- 2026}
+
+% ── Conference Presentations ─────────────────────────────────
+\section{Conference Presentations}
+
+\textbf{Kavya Prakash.} ``Environmental Pollutants and Brain Health: Insights from Human
+Cell Models of Neurodegeneration.'' \textit{Uppsala University Student Conference in
+Science and Technology}, 2025.
+
+\vspace{2pt}
+
+% ── References ───────────────────────────────────────────────
+\section{References}
+
+Available upon request.
+
+% ============================================================
+\end{document}
