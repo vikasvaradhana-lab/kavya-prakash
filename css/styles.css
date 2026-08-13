@@ -730,8 +730,8 @@ nav {
   padding: 96px 0;
 }
 #vision .label { color: rgba(255,255,255,0.65); }
-#vision h2 { color: #fff; font-size: clamp(2rem, 4vw, 3.2rem); max-width: 640px; margin-bottom: 24px; }
-#vision p { color: rgba(255,255,255,0.95); max-width: 600px; font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px; }
+#vision h2 { color: #fff; font-size: clamp(2rem, 4vw, 3.2rem); margin-bottom: 24px; }
+#vision p { color: rgba(255,255,255,0.95); font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px; }
 #vision .divider { background: rgba(255,255,255,0.4); }
 
 /* ================================================================
