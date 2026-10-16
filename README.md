@@ -8,7 +8,7 @@ Personal research portfolio website for **Kavya Prakash**, M.Sc. Biologist speci
 
 A clean, semantic, responsive portfolio website designed with an academic aesthetic. Built with vanilla HTML, CSS, and JavaScript — no frameworks or build tools required.
 
-**Version**: 2.0 — Academic + Industry Hybrid Positioning
+**Version**: 3.2 — Touch &amp; Motion (Desktop &amp; Mobile branches)
 
 ---
 
@@ -18,6 +18,7 @@ A clean, semantic, responsive portfolio website designed with an academic aesthe
 kavya-prakash-portfolio/
 │
 ├── index.html              ← Main HTML page
+├── favicon.svg             ← Brass "KP" monogram favicon
 │
 ├── css/
 │   └── styles.css          ← All styles (design tokens, layout, responsive)
@@ -26,7 +27,8 @@ kavya-prakash-portfolio/
 │   └── main.js             ← All interactivity (theme toggle, animations)
 │
 ├── images/
-│   └── kavya-profile.jpg   ← Professional photograph
+│   ├── hero-researcher-portrait.webp   ← Hero portrait photograph
+│   └── research-profile-lab.webp       ← Research profile photograph
 │
 ├── cv/
 │   └── Kavya_Prakash_CV.pdf ← Downloadable CV
@@ -102,8 +104,11 @@ Refer to `docs/AI_EDITING_MAP.md` for comprehensive editing guidance. This file 
 - **No build step required** — edit files directly
 - **CSS custom properties** control the entire colour system — edit `:root` in `styles.css`
 - **Dark mode** is controlled via `[data-theme="dark"]` overrides
-- **Responsive breakpoints**: 900px (tablet), 600px (mobile)
+- **Responsive breakpoints**: 960px (tablet), 620px (mobile)
 - **Google Fonts**: Cormorant Garamond (display), DM Sans (body), DM Mono (monospace)
+- **Icons**: inline SVG sprite (`<symbol>` defs) at the top of `index.html`, referenced via `<use href="#i-…">`
+- **Decorative motifs**: dot-grid background, hairline rules, helix plate in the Research Vision section, film-grain overlay, cursor spotlight, and an ambient molecular-network canvas in the hero
+- **Favicon**: `favicon.svg` — brass monogram
 
 ### Version Control
 - Always update `docs/CHANGELOG.md` after modifications

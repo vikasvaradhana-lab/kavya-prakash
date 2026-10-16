@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Kavya Prakash — Molecular Biologist specialising in epigenetics, developmental toxicology and stem cell biology. Uppsala University.">
 <meta name="keywords" content="Kavya Prakash, epigenetics, neurodevelopmental toxicology, Uppsala University, PhD candidate, stem cell, BPA, molecular biology">
+<meta name="theme-color" content="#0a0b0c">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:title" content="Kavya Prakash | Molecular Biologist">
 <meta property="og:description" content="Molecular Biologist in Epigenetics &amp; Developmental Toxicology — Uppsala University">
 <meta property="og:type" content="website">
@@ -25,13 +27,58 @@
 </head>
 <body>
 
+<!-- ── Premium atmospheric layers ── -->
+<div class="cursor-spot" id="cursorSpot" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ================================================= -->
+<!-- ICON SPRITE (decorative, stroke-based)            -->
+<!-- ================================================= -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-institution" viewBox="0 0 24 24"><path d="M3 9.2 12 3.5 21 9.2"/><path d="M5.5 9.6v9.9M9.8 9.6v9.9M14.2 9.6v9.9M18.5 9.6v9.9"/><path d="M3.6 19.5h16.8M4.2 9.6h15.6"/></symbol>
+  <symbol id="i-degree" viewBox="0 0 24 24"><path d="M2 8.3 12 3.8l10 4.5L12 12.8 2 8.3Z"/><path d="M6 10.3v4c0 1.6 2.7 2.9 6 2.9s6-1.3 6-2.9v-4"/><path d="M20.2 9v5"/></symbol>
+  <symbol id="i-petri" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.2"/><circle cx="10.1" cy="10.4" r="0.7"/></symbol>
+  <symbol id="i-microscope" viewBox="0 0 24 24"><path d="M8.5 20.5h12"/><path d="M12.6 20.5v-2.6"/><path d="M9.8 17.9h6"/><path d="M11.2 17.9c0-3.1 1.2-4.4 3-4.4s3 1.4 3 4.4"/><path d="M13.7 13.4 8.9 8.6a2 2 0 0 1 0-2.8l.9-.9a2 2 0 0 1 2.8 0l4.8 4.8"/><path d="M7.6 9.9 6 11.5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20h16"/><path d="M7 20v-7M12 20V5M17 20v-10"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="12" cy="12" r="1.1"/></symbol>
+  <symbol id="i-dna" viewBox="0 0 24 24"><path d="M8.5 3c-3 3-3 6 0 9s3 6 0 9"/><path d="M15.5 3c3 3 3 6 0 9s-3 6 0 9"/><path d="M8.4 6.6h7.2M8.2 12h7.6M8.4 17.4h7.2"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6"/><path d="M12 3.4c2.7 2.8 2.7 14.4 0 17.2"/><path d="M12 3.4c-2.7 2.8-2.7 14.4 0 17.2"/><path d="M3.6 12h16.8"/></symbol>
+  <symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5.2C10.8 3.9 9.2 3.6 7.9 4.3 6.5 5 5.7 6.4 6 7.7 4.7 7.9 3.7 9 3.7 10.4c0 1.2.7 2.2 1.8 2.7-.3 1.3.4 2.6 1.7 3.1.2 1.5 1.5 2.6 3.1 2.6.6 0 1.1-.2 1.6-.5"/><path d="M12 5.2c1.2-1.3 2.8-1.6 4.1-.9 1.4.7 2.2 2.1 1.9 3.4 1.3.2 2.3 1.3 2.3 2.7 0 1.2-.7 2.2-1.8 2.7.3 1.3-.4 2.6-1.7 3.1-.2 1.5-1.5 2.6-3.1 2.6-.6 0-1.1-.2-1.6-.5"/><path d="M12 5v14"/></symbol>
+  <symbol id="i-molecule" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.3"/><circle cx="5.2" cy="6.2" r="1.7"/><circle cx="18.8" cy="6.2" r="1.7"/><circle cx="18.8" cy="17.8" r="1.7"/><circle cx="5.2" cy="17.8" r="1.7"/><path d="M6.4 7.4 10 10.4M17.6 7.4 14 10.4M17.6 16.6 14 13.6M6.4 16.6 10 13.6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.6"/><path d="M12 6.8V12l3.6 2.2"/></symbol>
+  <symbol id="i-pill" viewBox="0 0 24 24"><rect x="4.6" y="8" width="14.8" height="8" rx="4"/><path d="M12 8v8"/></symbol>
+  <symbol id="i-spiral" viewBox="0 0 24 24"><path d="M12 12a1.6 1.6 0 1 1 1.6 1.6 3.4 3.4 0 1 1-3.4-3.4 5.2 5.2 0 1 1 5.2 5.2 7 7 0 1 1-7-7"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11.5a6 6 0 0 0 12 0"/><path d="M12 17.5V21M9 21h6"/></symbol>
+  <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9.5 3.5h5"/><path d="M10.5 3.5v5.2L6 18.4A1.8 1.8 0 0 0 7.6 21h8.8a1.8 1.8 0 0 0 1.6-2.6L13.5 8.7V3.5"/><path d="M8.2 15h7.6"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4.2L15.8 5a2.1 2.1 0 0 1 3 3L8.2 19 4 20Z"/><path d="M14 6.8l3 3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="M3.6 6.8 12 13l8.4-6.2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.2 3.5H9l1.5 4-2 1.4a12.5 12.5 0 0 0 5.1 5.1l1.4-2 4 1.5v2.8a2 2 0 0 1-2.1 2A16.5 16.5 0 0 1 4.2 5.6a2 2 0 0 1 2-2.1Z"/></symbol>
+</svg>
+
+<div class="section-rail" id="sectionRail" aria-hidden="true">
+  <span class="rail-tick"></span>
+  <span class="rail-tick"></span>
+  <span class="rail-tick"></span>
+  <span class="rail-tick"></span>
+  <span class="rail-tick"></span>
+</div>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
 <!-- ================================================= -->
 <!-- SECTION: NAVIGATION                               -->
 <!-- ================================================= -->
 <header>
   <nav role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
-      <a href="#hero" class="nav-logo">Kavya <span>Prakash</span></a>
+      <a href="#hero" class="nav-logo">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <circle class="bm-ring" cx="20" cy="20" r="18.5"/>
+          <path class="bm-line" d="M12 10v20M12 20l9.5-10M12 20l9.5 10"/>
+          <path class="bm-line" d="M24.5 30V10H29a5 5 0 0 1 0 10h-4.5"/>
+        </svg>
+        <span class="brand-text">Kavya <span>Prakash</span></span>
+      </a>
       <ul class="nav-links">
         <li><a href="#about">Profile</a></li>
         <li><a href="#education">Education</a></li>
@@ -41,7 +88,7 @@
       </ul>
       <div class="nav-actions">
         <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
-          <svg id="sunIcon" viewBox="0 0 24 24"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1zm0-16a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1zm8 8a1 1 0 0 1 0 2h-1a1 1 0 0 1 0-2h1zM5 12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2h1zm11.95-6.364a1 1 0 0 1 1.414 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707zM6.343 17.657a1 1 0 0 1 1.414 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707zm12.021.707a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707zM7.757 6.343a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707z"/></svg>
+          <svg id="sunIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0v-1a1 1 0 0 1 1-1zm0-16a1 1 0 0 1 1 1v1a1 1 0 0 1-2 0V4a1 1 0 0 1 1-1zm8 8a1 1 0 0 1 0 2h-1a1 1 0 0 1 0-2h1zM5 12a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2h1zm11.95-6.364a1 1 0 0 1 1.414 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707zM6.343 17.657a1 1 0 0 1 1.414 1.414l-.707.707a1 1 0 0 1-1.414-1.414l.707-.707zm12.021.707a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707zM7.757 6.343a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707z"/></svg>
         </button>
         <a href="mailto:kavyaprakash0398@gmail.com" class="btn btn-primary">Contact</a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -67,39 +114,47 @@
 <!-- SECTION: HERO                                     -->
 <!-- ================================================= -->
 <section id="hero" aria-label="Introduction">
+  <canvas id="molCanvas" class="mol-canvas" aria-hidden="true"></canvas>
   <div class="hero-bg-decor" aria-hidden="true"></div>
 
-  <div class="hero-text container" style="grid-column:1;">
-    <div class="hero-status">
-      <span class="dot"></span>
-      <span>Molecular Biologist | Epigenetics | Developmental Toxicology</span>
+  <div class="hero-inner container">
+    <div class="hero-text">
+      <div class="hero-status">
+        <span class="dot"></span>
+        <span>Molecular Biologist | Epigenetics | Developmental Toxicology</span>
+      </div>
+      <h1>Kavya <em>Prakash</em></h1>
+      <h2 class="hero-theme">Environmental Exposures &amp; Neurodevelopment</h2>
+      <p class="hero-statement">Exploring mechanistic pathways through molecular and stem cell-based models.</p>
+      <p class="hero-summary">M.Sc. graduate in Biology (Immunology and Microbiology) from Uppsala University with experience in stem cell biology, epigenetics, neurodevelopmental toxicology, and transcriptomic data analysis. Skilled in qPCR, pyrosequencing, immunofluorescence, stem cell culture, RNA-seq analysis, and functional genomics. Seeking a PhD position in cell and molecular biology with a focus on disease mechanisms and stem cell-based models.</p>
+      <div class="hero-focus">
+        <span class="focus-tag">Environmental Epigenomics</span>
+        <span class="focus-tag">Stem Cell Models</span>
+        <span class="focus-tag">Endocrine Disruptors</span>
+        <span class="focus-tag">Cortical Neurodevelopment</span>
+      </div>
+      <div class="hero-actions">
+        <a href="cv/Kavya_Prakash_CV.pdf" class="btn btn-primary" download>Download CV</a>
+        <a href="mailto:kavyaprakash0398@gmail.com" class="btn btn-secondary">Collaborate</a>
+        <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
     </div>
-    <h1>Kavya <em>Prakash</em></h1>
-    <h2 class="hero-theme">Environmental Exposures &amp; Neurodevelopment</h2>
-    <p class="hero-statement">Exploring mechanistic pathways through molecular and stem cell-based models.</p>
-    <p class="hero-summary">M.Sc. graduate in Biology (Immunology and Microbiology) from Uppsala University with experience in stem cell biology, epigenetics, neurodevelopmental toxicology, and transcriptomic data analysis. Skilled in qPCR, pyrosequencing, immunofluorescence, stem cell culture, RNA-seq analysis, and functional genomics. Seeking a PhD position in cell and molecular biology with a focus on disease mechanisms and stem cell-based models.</p>
-    <div class="hero-focus">
-      <span class="focus-tag">Environmental Epigenomics</span>
-      <span class="focus-tag">Stem Cell Models</span>
-      <span class="focus-tag">Endocrine Disruptors</span>
-      <span class="focus-tag">Cortical Neurodevelopment</span>
-    </div>
-    <div class="hero-actions">
-      <a href="cv/Kavya_Prakash_CV.pdf" class="btn btn-primary" download>Download CV</a>
-      <a href="mailto:kavyaprakash0398@gmail.com" class="btn btn-secondary">Collaborate</a>
-      <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+
+    <div class="hero-photo-wrap" data-parallax="0.05">
+      <div class="hero-photo-inner">
+        <img src="images/hero-researcher-portrait.webp"
+             alt="Kavya Prakash, molecular biologist and early-career researcher"
+             loading="eager"
+             class="hero-portrait-img">
+      </div>
     </div>
   </div>
 
-  <div class="hero-photo-wrap">
-    <div class="hero-photo-inner">
-      <img src="images/hero-researcher-portrait.webp"
-           alt="Kavya Prakash, molecular biologist and early-career researcher"
-           loading="eager"
-           class="hero-portrait-img">
-    </div>
+  <div class="hero-baseline" aria-hidden="true">
+    <span class="hb-rule"></span>
+    <span class="hb-node"></span>
+    <span class="hb-rule"></span>
   </div>
-
 </section>
 
 <!-- ================================================= -->
@@ -109,17 +164,17 @@
   <div class="container">
     <div class="snapshot-grid">
       <div class="snapshot-card reveal">
-        <div class="snapshot-icon">🏛️</div>
+        <div class="snapshot-icon"><svg class="i" aria-hidden="true"><use href="#i-institution"/></svg></div>
         <h3>Institution</h3>
         <p>Uppsala University</p>
       </div>
       <div class="snapshot-card reveal">
-        <div class="snapshot-icon">🎓</div>
+        <div class="snapshot-icon"><svg class="i" aria-hidden="true"><use href="#i-degree"/></svg></div>
         <h3>Degree</h3>
         <p>MSc Biology (Immunology and Microbiology)</p>
       </div>
       <div class="snapshot-card reveal">
-        <div class="snapshot-icon">🧫</div>
+        <div class="snapshot-icon"><svg class="i" aria-hidden="true"><use href="#i-petri"/></svg></div>
         <h3>Experimental Models</h3>
         <div class="snapshot-tags">
           <span class="focus-tag">hESC</span>
@@ -129,7 +184,7 @@
         </div>
       </div>
       <div class="snapshot-card reveal">
-        <div class="snapshot-icon">🔬</div>
+        <div class="snapshot-icon"><svg class="i" aria-hidden="true"><use href="#i-microscope"/></svg></div>
         <h3>Molecular Techniques</h3>
         <div class="snapshot-tags">
           <span class="focus-tag">RT-qPCR</span>
@@ -138,7 +193,7 @@
         </div>
       </div>
       <div class="snapshot-card reveal">
-        <div class="snapshot-icon">📊</div>
+        <div class="snapshot-icon"><svg class="i" aria-hidden="true"><use href="#i-chart"/></svg></div>
         <h3>Data Analysis</h3>
         <div class="snapshot-tags">
           <span class="focus-tag">R</span>
@@ -147,7 +202,7 @@
         </div>
       </div>
       <div class="snapshot-card reveal">
-        <div class="snapshot-icon">🎯</div>
+        <div class="snapshot-icon"><svg class="i" aria-hidden="true"><use href="#i-target"/></svg></div>
         <h3>Career Direction</h3>
         <p>PhD Research in Developmental Epigenomics</p>
       </div>
@@ -161,13 +216,15 @@
 <section id="about" class="section" aria-label="Research Profile">
   <div class="container">
     <div class="about-grid">
-      <div class="about-left">
-        <img src="images/research-profile-lab.webp"
-             alt="Kavya Prakash performing laboratory research in a molecular biology laboratory"
-             class="about-portrait"
-             loading="lazy">
+      <div class="about-left" data-parallax="0.04">
+        <div class="about-portrait-frame">
+          <img src="images/research-profile-lab.webp"
+               alt="Kavya Prakash performing laboratory research in a molecular biology laboratory"
+               class="about-portrait"
+               loading="lazy">
+        </div>
         <div class="about-affil">
-          <div class="about-affil-icon" aria-hidden="true">🏛️</div>
+          <div class="about-affil-icon" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-institution"/></svg></div>
           <div class="about-affil-content">
             <p>Current Affiliation</p>
             <p>EpiTox Group · Department of Organismal Biology<br>Uppsala University, Sweden</p>
@@ -184,22 +241,22 @@
         <p>I am actively pursuing doctoral research opportunities at the intersection of cell and molecular biology, developmental epigenomics, environmental exposure biology, and stem cell-based disease modelling, with a focus on exploring disease mechanisms using stem cell differentiation, advanced molecular techniques, and in vitro disease modelling.</p>
         <div class="about-highlights">
           <div class="highlight-item">
-            <div class="hi-icon">🧬</div>
+            <div class="hi-icon"><svg class="i" aria-hidden="true"><use href="#i-dna"/></svg></div>
             <h4>Epigenetics Focus</h4>
             <p>DNA methylation, EDC mechanisms, stem cell epigenomics</p>
           </div>
           <div class="highlight-item">
-            <div class="hi-icon">🔬</div>
+            <div class="hi-icon"><svg class="i" aria-hidden="true"><use href="#i-microscope"/></svg></div>
             <h4>Wet-Lab Expertise</h4>
             <p>Pyrosequencing, RT-qPCR, immunofluorescence, cell culture</p>
           </div>
           <div class="highlight-item">
-            <div class="hi-icon">🌍</div>
+            <div class="hi-icon"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg></div>
             <h4>International Training</h4>
             <p>India → Sweden; multilingual; global research perspective</p>
           </div>
           <div class="highlight-item">
-            <div class="hi-icon">📊</div>
+            <div class="hi-icon"><svg class="i" aria-hidden="true"><use href="#i-chart"/></svg></div>
             <h4>Analytical Rigour</h4>
             <p>R &amp; DESeq2, GLP, QA/QC documentation, pathway analysis</p>
           </div>
@@ -418,7 +475,7 @@
         <div class="exp-header">
           <div>
             <h3 class="exp-title">Quality Assurance &amp; Quality Control Specialist</h3>
-            <div class="exp-org" style="color:var(--accent-gold)">Nexus Agro Farms · Kerala, India</div>
+            <div class="exp-org exp-org-gold">Nexus Agro Farms · Kerala, India</div>
           </div>
           <div class="exp-date">Oct 2021 — Jun 2024</div>
         </div>
@@ -598,37 +655,37 @@
     </div>
     <div class="interests-grid">
       <div class="interest-card reveal">
-        <div class="interest-icon">🧬</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-dna"/></svg></div>
         <h3>Epigenomics</h3>
         <p>DNA methylation dynamics, chromatin organisation, and genome-wide epigenetic reprogramming during development</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">🧠</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-brain"/></svg></div>
         <h3>Neurodevelopmental Toxicology</h3>
         <p>How early-life chemical exposures impair cortical differentiation and programme lasting neurological consequences</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">☣️</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-molecule"/></svg></div>
         <h3>Endocrine Disruption</h3>
         <p>Mechanistic investigation of bisphenols, plasticisers, and environmental chemicals on hormonal and transcriptional signalling</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">🕐</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg></div>
         <h3>Circadian Biology</h3>
         <p>Rhythmicity in DNA methylation and its intersection with developmental timing and environmental stress responses</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">🔬</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-microscope"/></svg></div>
         <h3>Stem Cell Models</h3>
         <p>Human and mouse embryonic stem cells as precision platforms for developmental toxicology and mechanistic epigenomics</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">💊</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-pill"/></svg></div>
         <h3>Cancer Epigenetics</h3>
         <p>miRNA-mediated chemoresistance, epigenetic plasticity in tumour progression, and novel therapeutic targets</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">🌀</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-spiral"/></svg></div>
         <h3>Neurodegenerative Disease Research</h3>
         <p>Investigating molecular mechanisms underlying neurodegenerative disorders using stem cell-based in vitro models to study disease progression, cellular dysfunction, and therapeutic targets.</p>
       </div>
@@ -649,22 +706,22 @@
     </div>
     <div class="interests-grid">
       <div class="interest-card reveal">
-        <div class="interest-icon">🎤</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></div>
         <h3>Research Presentations</h3>
         <p>Oral presentation at the Uppsala University Student Conference in Science and Technology, communicating neurotoxicology research to a multidisciplinary audience</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">🧪</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-flask"/></svg></div>
         <h3>Laboratory Mentoring</h3>
         <p>Instructed 20+ students in pyrosequencing, qPCR, live-cell imaging, and whole-mount in situ hybridisation as teaching assistant at Uppsala University</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">🌐</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg></div>
         <h3>International Engagement</h3>
         <p>International Student Ambassador for the Office of Science and Technology at Uppsala University, representing the institution's research community globally</p>
       </div>
       <div class="interest-card reveal">
-        <div class="interest-icon">✍️</div>
+        <div class="interest-icon"><svg class="i" aria-hidden="true"><use href="#i-pen"/></svg></div>
         <h3>Scientific Writing</h3>
         <p>Master's thesis on BPA/BPF effects on embryonic stem cell models of dorsal forebrain differentiation, completed 2026</p>
       </div>
@@ -682,15 +739,17 @@
       <div class="divider"></div>
       <h2>Presentations &amp; Conferences</h2>
     </div>
-    <div class="pub-card reveal">
-      <div class="pub-type">Conference Presentation · Oral</div>
-      <h3>Environmental Pollutants and Brain Health: Insights from Human Cell Models of Neurodegeneration</h3>
-      <p class="pub-meta">Kavya Prakash · Uppsala University Student Conference in Science and Technology, 2025</p>
-    </div>
-    <div class="pub-card reveal">
-      <div class="pub-type">Master's Thesis · Successfully Defended</div>
-      <h3>BPA/BPF Effects on Human and Mouse ESC Models of Dorsal Forebrain Differentiation</h3>
-      <p class="pub-meta">Kavya Prakash · Uppsala University, 2026</p>
+    <div class="pub-list">
+      <div class="pub-card reveal">
+        <div class="pub-type">Conference Presentation · Oral</div>
+        <h3>Environmental Pollutants and Brain Health: Insights from Human Cell Models of Neurodegeneration</h3>
+        <p class="pub-meta">Kavya Prakash · Uppsala University Student Conference in Science and Technology, 2025</p>
+      </div>
+      <div class="pub-card reveal">
+        <div class="pub-type">Master's Thesis · Successfully Defended</div>
+        <h3>BPA/BPF Effects on Human and Mouse ESC Models of Dorsal Forebrain Differentiation</h3>
+        <p class="pub-meta">Kavya Prakash · Uppsala University, 2026</p>
+      </div>
     </div>
   </div>
 </section>
@@ -707,19 +766,19 @@
     </div>
     <div class="awards-grid">
       <div class="award-card reveal">
-        <div class="award-icon">🌐</div>
+        <div class="award-icon"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg></div>
         <h3>International Student Ambassador</h3>
         <p>Office of Science and Technology, Uppsala University — representing the institution's international academic community</p>
         <span class="aw-year">2025 — 2026</span>
       </div>
       <div class="award-card reveal">
-        <div class="award-icon">🎤</div>
+        <div class="award-icon"><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg></div>
         <h3>Conference Speaker</h3>
         <p>Selected to present at the Uppsala University Student Conference in Science and Technology — communicating original research to a multidisciplinary audience</p>
         <span class="aw-year">2025</span>
       </div>
       <div class="award-card reveal">
-        <div class="award-icon">📝</div>
+        <div class="award-icon"><svg class="i" aria-hidden="true"><use href="#i-pen"/></svg></div>
         <h3>IELTS Band 8.0</h3>
         <p>Exceptional English language proficiency demonstrating readiness for international doctoral programmes and global scientific collaboration</p>
         <span class="aw-year">Academic</span>
@@ -732,9 +791,16 @@
 <!-- SECTION: RESEARCH_VISION                          -->
 <!-- ================================================= -->
 <section id="vision" aria-label="Research Vision">
+  <div class="vision-helix" aria-hidden="true" data-parallax="0.08">
+    <svg viewBox="0 0 120 600" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M40 0C80 75 0 125 40 200S80 275 40 350S0 425 40 500S80 575 40 600"/>
+      <path d="M80 0C40 75 120 125 80 200S40 275 80 350S120 425 80 500S40 575 80 600"/>
+      <path d="M40 40h40M40 120h40M40 200h40M40 280h40M40 360h40M40 440h40M40 520h40"/>
+    </svg>
+  </div>
   <div class="container">
     <div class="label reveal">Research Vision</div>
-    <div class="divider" style="background:rgba(255,255,255,0.3); margin: 12px 0 24px;"></div>
+    <div class="divider divider-invert"></div>
     <h2 class="reveal">Advancing Neurodegeneration Research Using Stem Cell-Based In Vitro Models</h2>
     <p class="reveal">My research vision is to contribute to a deeper understanding of the molecular mechanisms underlying neurodegenerative diseases through the development and application of optimized in vitro model systems. Neurodegenerative disorders are complex and multifactorial, involving processes such as protein aggregation, impaired cellular homeostasis, altered neuronal function, and progressive cell loss. Improving experimental models that accurately recapitulate these pathological features is essential for understanding disease mechanisms and developing effective therapeutic strategies.</p>
     <p class="reveal">Building on my background in stem cell biology, I aim to utilize and refine stem cell-based in vitro models to better mimic the cellular and molecular characteristics of neurodegeneration. I am particularly interested in developing physiologically relevant disease models that enable the investigation of early pathological events and cellular responses associated with neurodegenerative processes. Through these models, I hope to identify key molecular pathways involved in disease initiation and progression and explore how disruptions in cellular quality control systems contribute to neuronal dysfunction.</p>
@@ -802,21 +868,21 @@
         <p>Whether you are a prospective PhD supervisor, a principal investigator, a research coordinator, or a biotechnology recruiter, Kavya welcomes conversations about doctoral programmes, research collaborations, and career opportunities in molecular biology and epigenetics.</p>
         <div class="contact-links">
           <a href="mailto:kavyaprakash0398@gmail.com" class="contact-link">
-            <div class="cl-icon">✉</div>
+            <div class="cl-icon"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></div>
             <div>
               <span class="cl-label">Email</span>
               <span class="cl-val">kavyaprakash0398@gmail.com</span>
             </div>
           </a>
           <a href="tel:+46769640800" class="contact-link">
-            <div class="cl-icon">📞</div>
+            <div class="cl-icon"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></div>
             <div>
               <span class="cl-label">Phone · Uppsala, Sweden</span>
               <span class="cl-val">+46 7696 40 800</span>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank" rel="noopener" class="contact-link">
-            <div class="cl-icon">in</div>
+            <div class="cl-icon cl-icon-in">in</div>
             <div>
               <span class="cl-label">LinkedIn</span>
               <span class="cl-val">linkedin.com/in/kavya-prakash-vks</span>
@@ -846,7 +912,7 @@
         <button class="btn btn-primary" onclick="handleForm(event)">
           Send Message
         </button>
-        <p id="form-msg" style="margin-top:12px;font-size:0.85rem;color:var(--accent);display:none;text-align:center;">
+        <p id="form-msg" class="form-msg">
           Thank you! Please email directly at kavyaprakash0398@gmail.com
         </p>
       </div>
@@ -861,12 +927,12 @@
 <!-- ================================================= -->
 <footer>
   <div class="container">
-    <p style="margin-bottom:12px;">
-      <strong style="color:rgba(255,255,255,0.95)">Kavya Prakash</strong> · 
+    <p class="footer-name">
+      <strong>Kavya Prakash</strong> · 
       M.Sc. Biology (Immunology &amp; Microbiology) · Uppsala University
     </p>
-    <p style="margin-bottom:24px;">Uppsala, Sweden · <a href="mailto:kavyaprakash0398@gmail.com">kavyaprakash0398@gmail.com</a> · <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank">LinkedIn</a></p>
-    <p style="font-size:0.75rem;opacity:0.6">&copy; 2026 Kavya Prakash · Academic Research Portfolio</p>
+    <p class="footer-meta">Uppsala, Sweden · <a href="mailto:kavyaprakash0398@gmail.com">kavyaprakash0398@gmail.com</a> · <a href="https://www.linkedin.com/in/kavya-prakash-vks/" target="_blank">LinkedIn</a></p>
+    <p class="footer-copy">&copy; 2026 Kavya Prakash · Academic Research Portfolio</p>
   </div>
 </footer>
 

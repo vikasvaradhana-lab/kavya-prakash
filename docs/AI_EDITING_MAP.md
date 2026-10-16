@@ -18,10 +18,13 @@ kavya-prakash-portfolio/
 │   └── main.js             ← All interactivity (IIFEs, labelled sections)
 │
 ├── images/
-│   └── kavya-profile.jpg   ← Professional photograph
+│   ├── hero-researcher-portrait.webp   ← Hero portrait photograph
+│   └── research-profile-lab.webp       ← Research profile photograph
 │
 ├── cv/
-│   └── Kavya_Prakash_CV.pdf ← Downloadable CV
+│   ├── Kavya_Prakash_CV.pdf            ← Downloadable CV
+│   ├── Kavya_Prakash_CV.tex            ← LaTeX source (academic)
+│   └── Kavya_Prakash_CV_Industry.tex   ← LaTeX source (industry)
 │
 ├── docs/
 │   ├── AI_EDITING_MAP.md   ← This file
@@ -70,42 +73,50 @@ The HTML is organised into clearly marked sections. Each section begins with a v
 
 The CSS is organised into the following labelled blocks (top to bottom):
 
-1. **DESIGN TOKENS** — CSS custom properties for colours, spacing, typography, shadows
-2. **DARK MODE TOKENS** — `[data-theme="dark"]` overrides
-3. **RESET** — Box model, smooth scrolling, body defaults, scrollbar, selection
-4. **TYPOGRAPHY** — Heading and paragraph defaults
-5. **UTILITIES** — `.container`, `.section`, `.label`, `.divider`, `.section-header`
-6. **NAVIGATION** — Fixed nav, links, buttons, theme toggle, hamburger, mobile menu
-7. **HERO** — Hero grid, photo wrap, stats, status badge, focus tags
-8. **RESEARCH PROFILE** — About grid, portrait, affiliation, highlights
-9. **EDUCATION** — Timeline, year markers, content blocks
-10. **RESEARCH EXPERIENCE** — Experience cards, tech tags
-11. **TECHNICAL EXPERTISE** — Skills grid, skill bars
-12. **RESEARCH INTERESTS** — Interest cards grid
-13. **PUBLICATIONS** — Publication cards, upcoming placeholder
-14. **AWARDS** — Award cards grid
-15. **RESEARCH VISION** — Full-accent-background section
-16. **WHY KAVYA** — Candidate profile cards
-17. **CONTACT** — Contact info, form fields
-18. **FOOTER** — Footer styling
-19. **ANIMATIONS** — `@keyframes fadeUp`, `fadeIn`, `pulse`, `.reveal`
-20. **RESPONSIVE — TABLET** — `@media (max-width: 900px)`
-21. **RESPONSIVE — MOBILE** — `@media (max-width: 600px)`
+1. **DESIGN TOKENS — LIGHT** — `:root` custom properties (palette, type, layout, motion)
+2. **DESIGN TOKENS — DARK** — `[data-theme="dark"]` overrides
+3. **RESET & BASE** — box model, body dot-grid motif, scrollbar, selection
+4. **ICONS** — `.i` stroke styling for the SVG sprite
+5. **TYPOGRAPHY** — heading/paragraph/link defaults, focus-visible
+6. **UTILITIES** — `.container`, `.section`, `.label` (auto-numbered), `.divider`, `.section-header`
+7. **SCROLL PROGRESS** — top reading-progress bar
+8. **NAVIGATION** — fixed blurred nav, links, buttons, theme toggle, hamburger, mobile menu
+9. **HERO** — hero grid, status pill, portrait frame, baseline motif
+10. **RESEARCH SNAPSHOT** — seamless tiled grid + icon tokens
+11. **RESEARCH PROFILE (ABOUT)** — portrait frame, affiliation, highlights
+12. **EDUCATION (TIMELINE)** — hairline rail + nodes
+13. **TEACHING & MENTORSHIP / RESEARCH EXPERIENCE** — dossier cards, tech tags
+14. **TECHNICAL EXPERTISE (SKILLS)** — card grid, animated bars
+15. **RESEARCH INTERESTS / SCIENTIFIC COMMUNICATION** — gradient-top cards
+16. **PUBLICATIONS** — citation-style cards
+17. **AWARDS** — copper icon cards
+18. **RESEARCH VISION** — deep petrol plate + helix motif
+19. **WHY KAVYA** — seamless ledger grid
+20. **CONTACT** — info links + form card
+21. **FOOTER** — ink block
+22. **ANIMATIONS** — `@keyframes fadeUp`, `fadeIn`, `pulse`, `.reveal`
+23. **RESPONSIVE — TABLET** — `@media (max-width: 960px)`
+24. **RESPONSIVE — MOBILE** — `@media (max-width: 620px)`
+25. **ACCESSIBILITY — REDUCED MOTION** — `@media (prefers-reduced-motion: reduce)`
 
 ### Design Token Reference
 
-| Token             | Light Mode      | Dark Mode       | Purpose                  |
-|-------------------|-----------------|-----------------|-------------------------|
-| `--ink`           | `#0f0f0e`       | `#f0ede6`       | Primary text             |
-| `--ink-soft`      | `#2c2c2a`       | `#d6d2c8`       | Body text                |
-| `--ink-muted`     | `#5a5955`       | `#9a9688`       | Secondary text           |
-| `--ink-faint`     | `#9a9891`       | `#5c594f`       | Tertiary/label text      |
-| `--surface`       | `#f8f6f1`       | `#111110`       | Page background          |
-| `--surface-warm`  | `#f0ede6`       | `#191817`       | Alternating section bg   |
-| `--surface-card`  | `#fdfcf9`       | `#1d1c1a`       | Card background          |
-| `--accent`        | `#2d5a4f`       | `#5aaa94`       | Primary accent (green)   |
-| `--accent-light`  | `#3d7a6a`       | `#7abfad`       | Accent hover             |
-| `--accent-gold`   | `#8a7340`       | `#c9a96e`       | Industry/gold accent     |
+| Token             | Light Mode      | Dark Mode       | Purpose                    |
+|-------------------|-----------------|-----------------|----------------------------|
+| `--ink`           | `#161b1a`       | `#ece7dd`       | Primary text               |
+| `--ink-soft`      | `#333a38`       | `#cfc9bd`       | Body text                  |
+| `--ink-muted`     | `#5f6866`       | `#969c95`       | Secondary text             |
+| `--ink-faint`     | `#8d938f`       | `#6a716c`       | Tertiary/label text        |
+| `--paper`         | `#f4f1ea`       | `#0d1211`       | Page background (bone)     |
+| `--paper-2`       | `#ece7dc`       | `#141b19`       | Alternating section bg     |
+| `--card`          | `#fbf9f4`       | `#18201e`       | Card background            |
+| `--accent`        | `#0e4f4a`       | `#62c3b1`       | Primary accent (petrol)    |
+| `--accent-2`      | `#1c766c`       | `#8ad8c8`       | Accent hover               |
+| `--accent-pale`   | `#dcebe6`       | `#12302c`       | Accent tint                |
+| `--copper`        | `#a15c34`       | `#d29a68`       | Industry/copper accent     |
+| `--copper-pale`   | `#f0e4d8`       | `#2a2119`       | Copper tint                |
+| `--line`          | `rgba(22,27,26,0.10)` | `rgba(236,231,221,0.09)` | Hairline borders |
+| `--dots`          | `rgba(22,27,26,0.05)` | `rgba(236,231,221,0.045)` | Dot-grid motif |
 
 ---
 
@@ -117,22 +128,48 @@ All logic is wrapped in IIFEs to prevent global scope pollution.
 
 | Section               | Function                | Description                                        |
 |-----------------------|------------------------|----------------------------------------------------|
+| —                     | `prefersReducedMotion` | Detects `prefers-reduced-motion` to disable motion  |
+| —                     | `finePointer`          | Detects hover/pointer capability for pointer effects |
 | THEME TOGGLE          | `initTheme()`          | Reads/writes localStorage, toggles `data-theme`    |
 | MOBILE NAVIGATION     | `initMobileNav()`      | Hamburger toggle, `closeMobile()` global function  |
 | SCROLL ANIMATIONS     | `initScrollReveal()`   | IntersectionObserver adds `.visible` to `.reveal`  |
 | INTERACTIONS          | `initSkillBars()`      | Animates skill fill bars on intersection           |
-| INTERACTIONS          | `initCounters()`       | Counter animation for `.stat-num[data-count]`      |
+| INTERACTIONS          | `initScrollState()`    | Scroll-progress bar, `nav.scrolled`, section rail  |
 | UTILITIES             | `handleForm()`         | Shows thank-you message on form submit             |
 | UTILITIES             | `initNavActiveState()` | Highlights nav links based on scroll position      |
+| PREMIUM               | `initParallax()`       | Translates `[data-parallax]` elements on scroll    |
+| PREMIUM               | `initMagnetic()`       | Magnetic pointer-follow on `.btn` (fine pointer)   |
+| PREMIUM               | `initCursorSpot()`     | Eased cursor spotlight (`.cursor-spot`)            |
+| PREMIUM               | `initMolecularCanvas()`| Ambient brass molecular-network canvas (`#molCanvas`) |
+| MOBILE (v3.2)         | `initTouchMotion()`    | Touch-only: ambient + finger-follow glow, device-tilt parallax |
+| —                     | `window.__tiltX/__tiltY` | Device-tilt offsets consumed by `initParallax()` |
+| —                     | `window.__parallaxUpdate` | Parallax redraw hook called by tilt handler    |
 
 ---
 
 ## Asset Inventory
 
-| File                          | Type       | Used In                     | Notes                       |
-|-------------------------------|------------|-----------------------------|-----------------------------||
-| `images/kavya-profile.jpg`    | JPEG       | Hero, Research Profile      | Professional portrait        |
-| `cv/Kavya_Prakash_CV.pdf`     | PDF        | Download CTA (future)       | ATS-optimised resume         |
+| File                          | Type       | Used In                     | Notes                        |
+|-------------------------------|------------|-----------------------------|------------------------------|
+| `images/hero-researcher-portrait.webp` | WebP | Hero (`#hero`)          | Portrait, eager-loaded        |
+| `images/research-profile-lab.webp`     | WebP | Research Profile (`#about`) | Lab photograph, lazy-loaded |
+| `cv/Kavya_Prakash_CV.pdf`     | PDF        | Hero "Download CV" CTA      | ATS-optimised resume          |
+| `favicon.svg`                 | SVG        | `<head>` favicon            | Brass "KP" monogram           |
+
+### Premium Layers (v3.1)
+
+| Element / Hook   | Location            | Purpose                                            |
+|------------------|---------------------|----------------------------------------------------|
+| `.grain`         | `index.html` (body) | Fixed film-grain overlay (SVG noise data URI)      |
+| `#cursorSpot`    | `index.html` (body) | Pointer-following radial spotlight                 |
+| `#sectionRail`   | `index.html` (body) | Decorative 5-tick rail tracking primary sections   |
+| `.brand-mark`    | Nav logo            | Inline SVG monogram                                |
+| `#molCanvas`     | Hero                | Ambient molecular-network animation                |
+| `[data-parallax]`| Hero/About/Vision   | Scroll parallax speed factor                       |
+
+### Icon System
+
+Decorative emoji glyphs were replaced with a hand-built **inline SVG sprite** placed at the top of `index.html` (element `.sprite`, containing `<symbol id="i-…">` defs). Icons are referenced with `<svg class="i"><use href="#i-…"/></svg>`. Stroke styling lives in the `/* ICONS */` CSS block (`.i`), so icons inherit `currentColor`.
 
 ---
 
@@ -141,15 +178,15 @@ All logic is wrapped in IIFEs to prevent global scope pollution.
 ### Modifying the Hero
 - **Location**: `index.html` → `<!-- SECTION: HERO -->`
 - **CSS**: `css/styles.css` → `/* HERO */` block
-- **Content elements**: `.hero-status span` (status text), `h1` (name), `.hero-tagline`, `.hero-focus` (tags), `.hero-actions` (CTA buttons)
-- **Photo**: Replace `images/kavya-profile.jpg`; update `alt` attribute
-- **Stats**: Edit `.stat-num data-count` values and `.stat-label` text
+- **Content elements**: `.hero-status span` (status text), `h1` (name), `.hero-theme` (headline), `.hero-statement`, `.hero-summary`, `.hero-focus` (tags), `.hero-actions` (CTA buttons)
+- **Photo**: Replace `images/hero-researcher-portrait.webp`; update `alt` attribute
+- **Decorative**: `.hero-bg-decor` (gradients), `.hero-baseline` (hairline motif)
 
 ### Modifying Research Profile
 - **Location**: `index.html` → `<!-- SECTION: RESEARCH_PROFILE -->`
-- **CSS**: `css/styles.css` → `/* RESEARCH PROFILE */` block
+- **CSS**: `css/styles.css` → `/* RESEARCH PROFILE (ABOUT) */` block
 - **Content elements**: `h2` (heading), `.subtitle`, paragraph text, `.highlight-item` cards
-- **Portrait**: Same image as hero; change `class="about-portrait"` img src if needed
+- **Portrait**: `images/research-profile-lab.webp`; update `alt` if replaced
 
 ### Modifying Research Experience
 - **Location**: `index.html` → `<!-- SECTION: RESEARCH_EXPERIENCE -->`
@@ -187,5 +224,5 @@ All logic is wrapped in IIFEs to prevent global scope pollution.
 3. **Search for labelled blocks** in CSS to locate styles
 4. **Search for section labels** in JS to locate behaviour
 5. **Test in both light and dark mode** after any change
-6. **Test at 600px and 900px breakpoints** for responsiveness
+6. **Test at 620px and 960px breakpoints** for responsiveness
 7. **Update CHANGELOG.md** after every modification

@@ -90,7 +90,7 @@ Phased evolution plan from refactor baseline to production-ready scientific port
 ---
 
 ## Version 3.0 — Scientific Visual Redesign
-**Status**: Planned
+**Status**: Complete ✅
 
 **Goal**: Move visual language closer to EMBL, Max Planck, ETH Zurich, Karolinska.
 
@@ -103,7 +103,47 @@ Phased evolution plan from refactor baseline to production-ready scientific port
 - Typography hierarchy update
 - Institutional aesthetic alignment
 
-**Rules**: No major content changes.
+**Delivered (v3.0)**:
+- Fresh "Editorial Molecular" palette (petrol + copper on bone) for light and dark themes
+- Inline SVG line-icon sprite replacing decorative emoji
+- Scientific motifs (dot grid, helix plate, hairline rules, diamond markers)
+- Numbered section labels, scroll-progress bar, elevated navigation
+- `prefers-reduced-motion` support and refined responsive breakpoints (960px / 620px)
+
+**Rules**: No major content changes. ✅ Verified — automated visible-text diff reports zero unintended textual changes.
+
+---
+
+## Version 3.1 — Premium Pass (Deep Ink & Brass)
+**Status**: Complete ✅
+
+**Goal**: Elevate the v3.0 redesign into a luxury art-directed experience without touching any content.
+
+**Delivered**:
+- Deep ink & brass palette (near-black charcoal + single metallic accent), both themes
+- Foil-gradient headings, glass surfaces, inset highlights, film-grain overlay
+- Cursor spotlight and ambient molecular-network hero canvas
+- Parallax media, magnetic buttons, luxe easing, staggered reveals
+- Brass monogram favicon, inline brand mark, decorative section rail
+- Drop caps, tabular numerals, enlarged display scale
+
+**Rules**: No content changes. ✅ Verified — 2,140 visible words identical.
+
+---
+
+## Version 3.2 — Touch & Motion (Mobile Branch)
+**Status**: Complete ✅
+
+**Goal**: Give mobile its own touch-native animation branch while keeping the desktop experience byte-identical.
+
+**Delivered**:
+- Capability-based branch (`hover: none and pointer: coarse`) — mobile runs its own motion system
+- Ambient drifting glow + touch-following glow (`.cursor-spot`, blend-mode overlay)
+- Device-tilt parallax via `deviceorientation` (iOS permission handled)
+- All `:hover` effects translated to `:active` tap/press feedback
+- Pauses on tab hide; passive listeners; lighter canvas on small screens
+
+**Rules**: No content changes. ✅ Verified — 2,140 visible words identical. Desktop untouched.
 
 ---
 
