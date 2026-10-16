@@ -147,6 +147,21 @@ Phased evolution plan from refactor baseline to production-ready scientific port
 
 ---
 
+## Version 3.3 — Mobile Nav (icon-only contact + visible menu)
+**Status**: Complete ✅
+
+**Goal**: Fix the mobile navigation overflow so the hamburger is always visible.
+
+**Delivered**:
+- Contact button becomes an icon-only round control on mobile (word preserved in DOM, hidden visually)
+- `aria-label` retained for accessibility
+- Hamburger pinned with `flex-shrink: 0`; nav spacing/brand scale tuned for small screens
+- Order: theme toggle → mail icon → menu button
+
+**Rules**: No content changes. ✅ Verified — 2,140 visible words identical. Desktop nav untouched.
+
+---
+
 ## Version 4.0 — Research Credibility Layer
 **Status**: Planned
 

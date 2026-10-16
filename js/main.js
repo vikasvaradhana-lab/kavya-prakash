@@ -1,6 +1,6 @@
 /* ================================================================
    KAVYA PRAKASH — PORTFOLIO JAVASCRIPT
-   Version: 3.2 — Touch & Motion (mobile branch)
+   Version: 3.3 — Mobile Nav
    ================================================================ */
 
 const prefersReducedMotion =

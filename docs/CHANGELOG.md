@@ -140,4 +140,19 @@ Adds a dedicated, touch-native animation branch for mobile so the premium "alive
 - Desktop cursor spotlight, magnetic buttons, hover effects, and all scroll-based motion
 - All links, CV download, images, section IDs, and behaviour
 
+## Version 3.3 — Mobile Nav (icon-only contact + visible menu)
+**Date**: 2026-10-16
+
+Fixes the mobile navigation where the hamburger was pushed off-screen by the full-width "Contact" button. Mobile view now shows a compact mail icon instead, with the menu button to its right. **Desktop nav is unchanged.** Zero content changes.
+
+### Changes
+- **Contact button**: Added a mail icon (`.btn-icon`) and wrapped the existing "Contact" wording in `.btn-label` (kept an `aria-label="Contact"` for screen readers). The word is never removed from the HTML.
+- **Mobile (≤620px)**: The button collapses to a 44px round **icon-only** control; brand mark and logo scale down; nav gaps tighten so the row always fits.
+- **Menu button**: Kept visible and given `flex-shrink: 0` so it can never be clipped. Order on mobile is theme toggle → mail icon → hamburger.
+- **Tablet (≤960px)**: nav gaps tightened for consistent spacing.
+
+### Preserved (No Changes)
+- **All textual content** — re-verified: 2,140 visible words identical (the word "Contact" remains in the DOM)
+- Desktop navigation, all links/`mailto:`, and every other section
+
 

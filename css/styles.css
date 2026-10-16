@@ -1,7 +1,7 @@
 /* ================================================================
    KAVYA PRAKASH — SCIENTIFIC PORTFOLIO
    Aesthetic: Deep Ink & Brass · Editorial Molecular Luxe
-   Version: 3.2 — Touch & Motion (mobile branch)
+   Version: 3.3 — Mobile Nav (icon-only contact + visible menu)
    ================================================================ */
 
 /* ================================================================
@@ -350,7 +350,7 @@ nav.scrolled {
 }
 .nav-links a.active::after, .nav-links a:hover::after { transform: scaleX(1); transform-origin: left; }
 
-.nav-actions { display: flex; align-items: center; gap: 14px; }
+.nav-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 
 .theme-btn {
   background: transparent; border: 1px solid var(--line-strong);
@@ -381,6 +381,7 @@ nav.scrolled {
 }
 .btn-primary:hover { color: #0a0b0c; box-shadow: var(--glow); }
 .btn-primary:hover::after { transform: translateX(120%); }
+.btn-icon { display: none; }
 .btn-secondary { background: transparent; color: var(--ink); border-color: var(--line-strong); }
 .btn-secondary:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-pale); }
 .btn-outline { background: transparent; color: var(--ink-muted); border-color: var(--line-strong); }
@@ -890,7 +891,8 @@ footer {
    ================================================================ */
 @media (max-width: 960px) {
   .nav-links { display: none; }
-  .hamburger { display: flex; }
+  .hamburger { display: flex; flex-shrink: 0; }
+  .nav-actions { gap: 10px; }
 
   #hero { min-height: auto; padding-top: calc(var(--nav-h) + 60px); }
   .hero-inner { grid-template-columns: 1fr; }
@@ -919,6 +921,18 @@ footer {
    ================================================================ */
 @media (max-width: 620px) {
   :root { --nav-h: 62px; }
+
+  /* Compact nav: monogram-sized brand + icon-only contact, hamburger kept visible */
+  .nav-inner { padding: 0 18px; }
+  .brand-mark { width: 28px; height: 28px; }
+  .brand-text { font-size: 1.18rem; }
+  .nav-actions { gap: 8px; }
+  .theme-btn { width: 38px; height: 38px; }
+  .nav-contact { width: 44px; height: 44px; padding: 0; border-radius: 50%; }
+  .nav-contact .btn-label { display: none; }
+  .nav-contact .btn-icon { display: block; width: 18px; height: 18px; }
+  .hamburger { padding: 10px; }
+
   .section { padding: 64px 0; }
   .section-header h2 { font-size: clamp(2rem, 7.5vw, 2.6rem); }
 

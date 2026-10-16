@@ -8,7 +8,7 @@ Personal research portfolio website for **Kavya Prakash**, M.Sc. Biologist speci
 
 A clean, semantic, responsive portfolio website designed with an academic aesthetic. Built with vanilla HTML, CSS, and JavaScript — no frameworks or build tools required.
 
-**Version**: 3.2 — Touch &amp; Motion (Desktop &amp; Mobile branches)
+**Version**: 3.3 — Mobile Nav (icon-only contact + visible menu)
 
 ---
 

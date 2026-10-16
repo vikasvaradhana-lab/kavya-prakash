@@ -166,6 +166,7 @@ All logic is wrapped in IIFEs to prevent global scope pollution.
 | `.brand-mark`    | Nav logo            | Inline SVG monogram                                |
 | `#molCanvas`     | Hero                | Ambient molecular-network animation                |
 | `[data-parallax]`| Hero/About/Vision   | Scroll parallax speed factor                       |
+| `.nav-contact`   | Nav contact button  | Desktop shows `.btn-label` ("Contact"); mobile (≤620px) shows `.btn-icon` (mail) only |
 
 ### Icon System
 
